@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise18</title>
+</head>
+<body>
+    <script>
+        var x="ilayaselvaganesh";
+        var m=0;
+        var n=0;
+        for(var i=0;i<x.length;i++){
+            if(x[i]=="p"){
+                m=m+1
+            }else if(x[i]=="t"){
+                n=n+1;
+            }
+        }
+        if(m==0&&n==0){
+            document.write("the strinng did not contain p and t");
+        }
+        else if(m==n){
+            document.write("they contain equal characters");
+        }        
+    </script>
+</body>
+</html>

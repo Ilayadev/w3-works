@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=0;
+        function perfect(a){
+            for(var i=1;i<a;i++){
+                if(a%i==0){
+                    x+=i;
+                }
+            }
+            var d=(x+a)/2;
+            if(a==d){
+                document.write("the number is  perfect")
+            }else{
+                document.write("the number is not perfect")
+            }
+        }
+        perfect(8128);
+    </script>
+</body>
+</html>

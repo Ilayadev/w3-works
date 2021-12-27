@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greaterdate(a,b){
+            var x=new Date(a);
+            var d=x.getTime();
+            var y=new Date(b);
+            var h=y.getTime();
+            if(d>h){
+                document.write("date1 is the greatest"+"<br>")
+            }else if (h>d){
+                document.write("date2 is the greatest"+"<br>")
+            }else{
+                document.write("date1 and date2 are same"+"<br>")
+            }
+        }
+        greaterdate((2021,2,22,14,56,33),(2021,3,23,12,55,31));
+    </script>
+</body>
+</html>

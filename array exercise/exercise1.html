@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+</head>
+<body>
+    <script>
+        function ilaya(n){
+            var x=n.split(" ");
+            for(var a=0;a<x.length;a++){
+                for(var b=0;b<x[a].length;b++){
+                    
+                   if(x[a][b]==x[a][b].toUpperCase()){
+                       document.write(x[a][b].toLowerCase())
+                   } 
+                   else{
+                    document.write(x[a][b].toUpperCase())
+                   }
+                }
+                
+            }
+        }
+        ilaya('ilaya SELVA ganesh');
+    </script>
+</body>
+</html>

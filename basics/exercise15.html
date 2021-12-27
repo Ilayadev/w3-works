@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise16</title>
+</head>
+<body>
+    <script>
+        var arr=[89,2,3,4,5,99];
+        var x=arr[0];
+        var z=[];
+        var y=arr[arr.length-1];
+        if(x>y){
+            for(var i=0;i<arr.length;i++){
+                arr[i]=x;
+            }
+            document.write(arr);
+        }else if(y>x){
+            for(var i=0;i<arr.length;i++){
+                z.push(y);
+            }
+            document.write(z);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function  action(a,b,c){
+            var x=a%10;
+            var y=b%10;
+            var z=c%10;
+            if(x==y&&y==z){
+                document.write('true');
+            }else if(x==y||x==z||y==z){
+                document.write('true');
+            }else{
+                document.write('false');
+            }
+        }
+        action(12,23,33);
+    </script>
+</body>
+</html>

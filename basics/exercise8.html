@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise8</title>
+</head>
+<body>
+    <script>
+        var x="pilayaps";
+        var y=x.charAt(0);
+        var z=x.charAt(x.length-1);
+        var text="";
+        if(y==z){
+            text=x.substring(1,x.length-1);
+        }else if(y=="p"){
+            text=x.substring(1);
+        }
+        else if(z=="p"){
+            text=x.substring(0,x.length);
+        }
+        else{
+            text=x;
+        }
+        document.write(text);
+
+    </script>
+</body>
+</html>

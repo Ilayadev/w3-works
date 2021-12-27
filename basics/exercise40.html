@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercises40</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,90,4,5,6,45];
+        var g=arr.length;
+        var newarr=[];
+        function action(n){
+                    function seyal(){           
+                                var x=arr[0];
+                                var y=arr[arr.length-1];
+                                var max;                 
+                                if(x>=y){
+                                    max=x;
+                                }else{
+                                    max=y
+                                }
+                                for(var i=0;i<arr.length;i++){
+                                    if(max<=arr[i]){
+                                        max=arr[i];            
+                                    var d=i;
+                                    }                       
+                                }
+                                newarr.push(max);
+                                    arr.splice(d,1);                   
+                            }                
+                            for(var i=0;i<g;i++){
+                                seyal();
+                            }
+                            // document.write(newarr);
+                            document.write(newarr[n-1]);
+                
+                 }
+                 action(1);
+                
+        
+
+    </script>
+</body>
+</html>
